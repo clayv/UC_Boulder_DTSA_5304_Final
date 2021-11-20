@@ -15,15 +15,19 @@ I chose to use a map as as the primary method of interaction along with a circle
 
 The dot colors of green and red on the map were chosen to show which states' data was "go"ing to be shown in the bar chart below (or alternatively which ones had "stop"ped being displayed). Additionally, a tooltip is used on the circle marks to show the name of the state and what that state's total expenditures for 2020 without having to click.
 
-Once the user does click the circle mark, the chart breaking down the spending for that state is updated. I _really_ wanted and planned to use a pie chart to show how different states allocate their budget.  Unfortunately I discovered that Altair does not support pie charts, but only after spending several hours wrangling the data and getting the map just right. So I decided to switch to a horizontal bar chart because a column chart made the text labels very difficult to read.  Finally, I was never able to get tooltips to work on the column chart, so I added the actual spending figure for each category as text next to that category's bar.
+Once the user does click the circle mark, the chart breaking down the spending for that state is updated. I _really_ wanted and planned to use a pie chart to show how different states allocate their budget.  Unfortunately I discovered that Altair does not support pie charts, but only after spending several hours wrangling the data and getting the map just right. So I decided to switch to a horizontal bar chart because a column chart made the text labels very difficult to read.  Finally, I was never able to get tooltips to work on the column chart, so I added the state's spending figure for each category as a percentage of that state's total budget next to that category's bar.
 
 
-4. Final Evaluation Approach, including the procedure, people recruited, and results.
+4. Final Evaluation Approach
+I was only able to get my immediate family to work with the visualization, none of whom had much interest in the data or the visualization when I asked for their help. Given this it would be difficult to describe the process as any of the four common evaluation techniques and instead I had each one use the visualization individually and told them that this showed spending in US by state and to "move the mouse around".  What I found was that the green dots did not imediately indicate to anyone that they were clickable, but as soon as a tooltip appeared they understood that spot had something special about it.  However, they still had to be told to click on them to change the bar chart below.
 
-
-
+Once they did click on it, they all immediately noticed the high percentage of any state's budget that was spent on education.  One of them, a high school student, called into question whether or not the data was real.  "I feel like this is a lie", she said.  My wife, a teacher a private school, noticed the high percentage and said, "Well why is the education at public schools so bad?"
 
 
 5. Synthesis of Findings
-including what elements of your approach worked well and what elements you would refine in future iterations.
+Overall, I thing the visualization worked well as it provided insights to each person that used it (e.g. "I would have thought community projects would have the biggest budget.").  However, the intial stumbling blocks indicated to me that although the _visuals_ worked well, the assumption is that these are static and therefore some amount of instruction is required to let people know what they can do.  Secondly, the calling into question of the veracity of the data indicated that I should have also clearly stated what the source of the data was, the US Census Bureau.
+
+Also, it was not obvious to some that the bar chart represents the selected state's budget (or all states if none were selected).  I tried for a long time to figure out how to update the title of a visualization dynamically, but was never able to.  So in a future iteration I'd like to see if I could get the title to change to reflect what is being display (e.g. US Spending Break Down, California Spending Breadown, etc.)
+
+
 
