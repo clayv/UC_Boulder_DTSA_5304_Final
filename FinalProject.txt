@@ -1,0 +1,29 @@
+1. Recap of Data, Goals, and Tasks
+I approached this assignment somewhat in reverse.  I knew I wanted to make use of linked charts and create something that would allow for some user activity.  As a result, I spent a good deal of time looking around Kaggle (https://www.kaggle.com/datasets) to find a dataset that might support this.  I did not find one on Kaggle, but I did find a reference the some data on US Census Bureau's web site and after exploring there found the 2020 ASPEP Datasets & Tables (https://www.census.gov/data/datasets/2020/econ/apes/annual-apes.html), which breaks down public spending across 26 categories for every state.
+
+This was a great dataset as it would allow for some interesting "drill down" activity for the user as well as challenge me in using Altair.
+
+The final task here, was to allow the user to get an overview of public expenditures across the United States as a whole as well being able to "drill down" into individual states and get a graphical representation of how different states allocate their budget.
+
+
+2. Link to the Visualization
+https://clayv.github.io/UC_Boulder_DTSA_5304_Final/FinalProject.html
+
+
+3. Summary of the Key Design Elements and Justification
+I chose to use a map as as the primary method of interaction along with a circle mark on each state.  Circle marks were chosen along with a size of 50 after experimenting with other sizes and shapes and finding this combination worked best in the area with Connecticut, Rhode Island, and Massachusetts as those are all states with smaller areas and in close proximity to each other.
+
+The dot colors of green and red on the map were chosen to show which states' data was "go"ing to be shown in the bar chart below (or alternatively which ones had "stop"ped being displayed). Additionally, a tooltip is used on the circle marks to show the name of the state and what that state's total expenditures for 2020 without having to click.
+
+Once the user does click the circle mark, the chart breaking down the spending for that state is updated. I _really_ wanted and planned to use a pie chart to show how different states allocate their budget.  Unfortunately I discovered that Altair does not support pie charts, but only after spending several hours wrangling the data and getting the map just right. So I decided to switch to a horizontal bar chart because a column chart made the text labels very difficult to read.  Finally, I was never able to get tooltips to work on the column chart, so I added the actual spending figure for each category as text next to that category's bar.
+
+
+4. Final Evaluation Approach, including the procedure, people recruited, and results.
+
+
+
+
+
+5. Synthesis of Findings
+including what elements of your approach worked well and what elements you would refine in future iterations.
+
